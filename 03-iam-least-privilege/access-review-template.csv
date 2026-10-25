@@ -1,0 +1,2 @@
+identity_type,identity_name,business_purpose,access_source,privileged_access,credential_status,last_used_or_evidence,risk_or_gap,decision,owner,review_date
+role,example-report-reader,Read monthly reports,Identity policy,No,Temporary credentials preferred,Replace with verified evidence,Example row only,Review and scope permissions,Example owner,YYYY-MM-DD
