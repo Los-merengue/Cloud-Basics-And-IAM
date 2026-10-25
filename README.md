@@ -4,6 +4,7 @@ The lab follows the order a student should implement the controls in a real AWS 
 the evidence to capture, and provides a sample solution and resume statements.
 
 The project also incorporates the Cloud Basics + IAM concepts:
+
 - IAM users, groups, roles, and policies.
 - Least-privilege access.
 - Auditing who has access to what.
@@ -15,11 +16,14 @@ The project also incorporates the Cloud Basics + IAM concepts:
 **Level:** Beginner | **Time:** 3–5 hours | **Focus:** AWS fundamentals, IAM, least privilege, access auditing, CloudTrail, billing alerts, and S3 security.
 
 ## Scenario
+
 You are a junior cloud security engineer at fictional Northstar Digital. Prepare a documented security baseline for a new AWS account, verify each control, and provide evidence another engineer can review.
 
-> **Safety:** Use an account you own or are authorized to administer. AWS Free Tier eligibility and pricing can change; check current terms before enabling services. Never commit credentials, MFA QR codes, recovery codes, account IDs, private billing details, or unredacted screenshots. Do not make a real S3 bucket public for testing.
+> **Safety:** Use an account you own or are authorized to administer. AWS Free Tier eligibility and pricing can change; check current terms before enabling services. Never commit credentials, MFA QR codes,
+recovery codes, account IDs, private billing details, or unredacted screenshots. Do not make a real S3 bucket public for testing.
 
 ## Learning outcomes
+
 - Explain root users, IAM users/groups/roles, permission policies, and role trust policies.
 - Protect root access with MFA and avoid using root for routine work.
 - Apply and explain least privilege.
@@ -30,6 +34,7 @@ You are a junior cloud security engineer at fictional Northstar Digital. Prepare
 - Document decisions, validation evidence, limitations, and remediation.
 
 ## GitHub repository layout
+
 ```text
 aws-account-hardening/
 ├── README.md
@@ -69,6 +74,7 @@ aws-account-hardening/
 ```
 
 ## Prerequisites
+
 - AWS account you control or are authorized to secure.
 - Console access, password manager, and MFA method.
 - Optional AWS CLI v2 for read-only validation.
@@ -90,9 +96,11 @@ Do not create root access keys. Prefer IAM Identity Center or another approved t
 | 8 | Write report and resume bullets | Report, decision log, accurate claims |
 
 ## Important design note
+
 The primary S3 public-access guardrail in this lab is **account-level S3 Block Public Access with all four settings enabled**. A bucket policy is an additional defense-in-depth control, not a replacement for Block Public Access or a full audit of identity permissions, bucket policies, and ACLs.
 
 ## Completion criteria
+
 - [ ] Root MFA enabled; no root access keys, or exception documented.
 - [ ] Routine administration uses a separate protected identity.
 - [ ] IAM users/groups/roles and permission sources reviewed.
@@ -105,6 +113,7 @@ The primary S3 public-access guardrail in this lab is **account-level S3 Block P
 - [ ] Resume wording matches work actually performed.
 
 ## Official references
+
 - [Root-user best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)
 - [IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 - [S3 Block Public Access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
@@ -114,6 +123,7 @@ The primary S3 public-access guardrail in this lab is **account-level S3 Block P
 - [AWS CLI installation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ## Student completion record
+
 - **Status:** Not started
 - **Date completed:** `YYYY-MM-DD`
 - **Controls verified:** List only controls you checked
